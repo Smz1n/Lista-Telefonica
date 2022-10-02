@@ -1,0 +1,16 @@
+{
+  "listaContatos": [
+    {
+      "id": 1,
+      "contato": "Samuel",
+      "numero": "994329898",
+      "cidade": "Caucaia"
+    },
+    {
+      "contato": "antonia",
+      "numero": 8534836434,
+      "cidade": "Fortaleza",
+      "id": 2
+    }
+  ]
+}
