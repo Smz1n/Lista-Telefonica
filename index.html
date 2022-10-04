@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Lista telefonica</title>
 </head>
 
@@ -17,12 +17,18 @@
   <hr>
 
   <!-- Botão do modal -->
-  <div class="text-end">
-    <button type="button" class="btn btn-primary mb-3 btn-sm"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Novo contato
-    </button>
+  <div class="row"> 
+    <div class="col">
+    <input id="input_busca" onkeyup="filtrar()" type="text" class="form-control" placeholder="Buscar Item">
   </div>
-  <table class="table table-striped table-hover">
+  <div class="col text-end">
+
+    <button type="button" class="btn btn-primary mb-3 btn-sm"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <span class="material-icons">add</span> Novo contato
+    </button>
+
+  </div>
+  <table class="table table-dark table-hover table table-striped table-hover">
     <thead>
       <tr>
         <th>ID</th>
@@ -50,7 +56,7 @@
 
             <input class="form-control form-control-lg mb-3" id="input_contato" placeholder="Nome Do Contato">
 
-            <input class="form-control form-control-lg mb-3" id="input_telefone" type="number"
+            <input class="form-control form-control-lg mb-3" id="input_telefone" type="text"
               placeholder="(xx) xxxxxxxxx">
 
             <input class="form-control form-control-lg mb-3" id="input_cidade" placeholder="Cidade">
@@ -97,6 +103,7 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
   <script src="index.js"></script>
+  <script src="filtrar.js"></script>
 </body>
 
 </html>
